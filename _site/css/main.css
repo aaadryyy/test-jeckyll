@@ -128,4 +128,6 @@ body { -webkit-tap-highlight-color: #222; }
 
 .emoji { font-size: 5rem; }
 
+.avatar { width: 10rem; border-radius: 50%; box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1); }
+
 /*# sourceMappingURL=main.css.map */
