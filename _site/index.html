@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
   <head>
 
     <meta charset="utf-8">
@@ -53,7 +53,7 @@
 
       <a class="navbar-brand page-scroll" href="#page-top">
         <img
-          src="/img/logo_letters.png"
+          src="/test-jeckyll/img/logo_letters.png"
           alt="Logo Pyronear"
           class="logo"
         />
@@ -202,7 +202,7 @@
         <div class="service-box">
           <img
             class="avatar"
-            src="/img/team/fg.jpeg"
+            src="/test-jeckyll/img/team/fg.jpeg"
             alt="test"
           />
           <p class="text-muted">
@@ -214,7 +214,7 @@
         <div class="service-box">
           <img
             class="avatar"
-            src="/img/team/analphabete.jpeg"
+            src="/test-jeckyll/img/team/analphabete.jpeg"
             alt="test"
           />
           <p class="text-muted">
@@ -226,7 +226,7 @@
         <div class="service-box">
           <img
             class="avatar"
-            src="/img/team/felix51.jpeg"
+            src="/test-jeckyll/img/team/felix51.jpeg"
             alt="test"
           />
           <p class="text-muted">
@@ -238,7 +238,7 @@
         <div class="service-box">
           <img
             class="avatar"
-            src="/img/team/sebastien-e.png"
+            src="/test-jeckyll/img/team/sebastien-e.png"
             alt="test"
           />
           <p class="text-muted">
@@ -250,7 +250,7 @@
         <div class="service-box">
           <img
             class="avatar"
-            src="/img/team/guillaume.jpeg"
+            src="/test-jeckyll/img/team/guillaume.jpeg"
             alt="test"
           />
           <p class="text-muted">
@@ -262,7 +262,7 @@
         <div class="service-box">
           <img
             class="avatar"
-            src="/img/team/guillaume.jpeg"
+            src="/test-jeckyll/img/team/guillaume.jpeg"
             alt="test"
           />
           <p class="text-muted">
@@ -277,7 +277,7 @@
           <div class="service-box">
             <img
               class="avatar"
-              src="/img/team/flora.jpeg"
+              src="/test-jeckyll/img/team/flora.jpeg"
               alt="test"
             />
             <p class="text-muted">
@@ -289,7 +289,7 @@
           <div class="service-box">
             <img
               class="avatar"
-              src="/img/team/adry.jpeg"
+              src="/test-jeckyll/img/team/adry.jpeg"
               alt="test"
             />
             <p class="text-muted">
@@ -301,7 +301,7 @@
           <div class="service-box">
             <img
               class="avatar"
-              src="/img/team/mateo.jpeg"
+              src="/test-jeckyll/img/team/mateo.jpeg"
               alt="test"
             />
             <p class="text-muted">
@@ -317,8 +317,103 @@
  <aside class="bg-dark">
   <div class="container text-center">
     <div class="call-to-action">
-      <h2>Protégez vos forêts !</h2>
-      <a href="#" class="btn btn-default btn-xl wow tada">Nous contacter</a>
+      <div class="row">
+        <h2>Protégez vos forêts !</h2>
+        <!-- <a href="#" class="btn btn-default btn-xl wow tada">Nous contacter</a> -->
+      </div>
+
+      <div class="row text-left">
+        <div class="col col-lg-6 col-lg-offset-3">
+          <!-- gform class allow sending data to google script -->
+
+          <form
+            class="gform"
+            method="POST"
+            action="https://script.google.com/macros/s/AKfycby4IzHuKNjucbEsOmA908du57b6tyfarZuYnNJNbw/exec"
+          >
+            <div class="form-group">
+              <label for="email">Votre adresse e-mail</label>
+              <input
+                type="email"
+                class="form-control email-form"
+                id="email"
+                aria-describedby="emailHelp"
+                name="email"
+              />
+              <small id="emailHelp" class="form-text text-muted"
+                >Nous ne partagerons jamais votre adresse e-mail sans votre
+                autorisation.</small
+              >
+            </div>
+            <div class="form-group">
+              <label for="message">Votre message</label>
+              <textarea
+                class="form-control email-form"
+                id="message"
+                rows="3"
+                name="message"
+              ></textarea>
+            </div>
+
+            <!-- <label for="email">Votre adresse e-mail</label> <br />
+            <input type="email" name="email" class="email-form" /> <br /> -->
+            <!-- 
+            <label for="message">Votre message</label> <br />
+            <textarea
+              name="message"
+              id=""
+              cols="30"
+              rows="10"
+              class="email-form"
+            ></textarea> -->
+            <button class="btn-default btn btn-block btn-lg" type="submit">
+              Envoyer
+            </button>
+            <div style="display: none;" class="thankyou_message text-center">
+              <!-- You can customize the thankyou message by editing the code below -->
+              <small>
+                <span alt="message envoyé">✅</span>
+                Message envoyé ! <br />
+                Merci de nous avoir contacté,nous revenons vers vous le plus
+                vite possible !
+              </small>
+            </div>
+          </form>
+          <!-- <form>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Email address</label>
+              <input
+                type="email"
+                class="form-control"
+                id="exampleInputEmail1"
+                aria-describedby="emailHelp"
+              />
+              <small id="emailHelp" class="form-text text-muted"
+                >We'll never share your email with anyone else.</small
+              >
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Password</label>
+              <input
+                type="password"
+                class="form-control"
+                id="exampleInputPassword1"
+              />
+            </div>
+            <div class="form-group form-check">
+              <input
+                type="checkbox"
+                class="form-check-input"
+                id="exampleCheck1"
+              />
+              <label class="form-check-label" for="exampleCheck1"
+                >Check me out</label
+              >
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form> -->
+        </div>
+      </div>
     </div>
   </div>
 </aside>
@@ -362,6 +457,13 @@
 
 <!-- Custom Theme JavaScript -->
 <script src="js/creative.js"></script>
+
+<!-- Form submission handler -->
+<script
+  data-cfasync="false"
+  type="text/javascript"
+  src="js/form-submission-handler.js"
+></script>
 
   </body>
 </html>
